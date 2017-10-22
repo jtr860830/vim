@@ -37,7 +37,6 @@ if dein#load_state('/Users/jtr860830/.vim/bundles')
   call dein#add('honza/vim-snippets')
   call dein#add('garbas/vim-snipmate')
   call dein#add('Shougo/denite.nvim')
-  " call dein#add('Valloric/YouCompleteMe')
 
   " You can specify revision/branch/tag.
   " call dein#add('Shougo/vimshell', { 'rev': '3787e5' })
