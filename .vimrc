@@ -29,6 +29,7 @@ if dein#load_state('/Users/jtr860830/.vim/bundles')
   call dein#add('fatih/vim-go')
   call dein#add('vim-airline/vim-airline')
   call dein#add('vim-airline/vim-airline-themes')
+  call dein#add('tpope/vim-fugitive')
   call dein#add('jiangmiao/auto-pairs')
   call dein#add('ryanoasis/vim-devicons')
   call dein#add('gko/vim-coloresque')
@@ -71,6 +72,7 @@ set history=1000
 set wildmode=longest,list,full
 set wildignorecase
 set backspace=2
+set laststatus=2
 syntax on
 color dracula
 
@@ -95,6 +97,11 @@ let g:NERDTreeIndicatorMapCustom = {
     \ "Unknown"   : "?"
     \ }
 let g:NERDTreeShowIgnoredStatus = 1
+
+" vim-airline
+let g:airline#extensions#tabline#enabled = 1
+let g:airline_powerline_fonts = 1
+let g:airline#extensions#whitespace#enabled = 0
 
 " Syntastic
 set statusline+=%#warningmsg#
