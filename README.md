@@ -1,4 +1,4 @@
-Denny's vimrc
+Jezrien's vimrc
 ===
 
 How to use?
