@@ -72,7 +72,6 @@ set history=1000
 set wildmode=longest,list,full
 set wildignorecase
 set backspace=2
-set laststatus=2
 syntax on
 color dracula
 
@@ -102,6 +101,7 @@ let g:NERDTreeShowIgnoredStatus = 1
 let g:airline#extensions#tabline#enabled = 1
 let g:airline_powerline_fonts = 1
 let g:airline#extensions#whitespace#enabled = 0
+set laststatus=2
 
 " Syntastic
 set statusline+=%#warningmsg#
