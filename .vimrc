@@ -25,7 +25,7 @@ if dein#load_state('/Users/jtr860830/.vim/bundles')
   call dein#add('tpope/vim-surround')
   call dein#add('vim-scripts/closetag.vim')
   call dein#add('majutsushi/tagbar')
-  call dein#add('dracula/vim')
+  call dein#add('tyrannicaltoucan/vim-quantum')
   call dein#add('fatih/vim-go')
   call dein#add('vim-airline/vim-airline')
   call dein#add('vim-airline/vim-airline-themes')
@@ -71,9 +71,15 @@ set hlsearch
 set history=1000
 set wildmode=longest,list,full
 set wildignorecase
+set termguicolors
 set backspace=2
+set background=dark
 syntax on
-color dracula
+
+" quantum theme
+colorscheme quantum
+let g:quantum_italics=1
+let g:quantum_black=1
 
 " NERDTree
 autocmd StdinReadPre * let s:std_in=1
@@ -98,6 +104,7 @@ let g:NERDTreeIndicatorMapCustom = {
 let g:NERDTreeShowIgnoredStatus = 1
 
 " vim-airline
+let g:airline_theme='quantum'
 let g:airline#extensions#tabline#enabled = 1
 let g:airline_powerline_fonts = 1
 let g:airline#extensions#whitespace#enabled = 0
