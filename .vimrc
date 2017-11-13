@@ -1,4 +1,4 @@
-"dein Scripts-----------------------------
+" dein Scripts-----------------------------
 if &compatible
   set nocompatible               " Be iMproved
 endif
@@ -56,7 +56,7 @@ if dein#check_install()
   call dein#install()
 endif
 
-"End dein Scripts-------------------------
+" End dein Scripts-------------------------
 
 " Global settings
 set nu
@@ -76,10 +76,10 @@ set backspace=2
 set background=dark
 syntax on
 
-" quantum theme
-colorscheme quantum
+" Quantum theme
 let g:quantum_italics=1
 let g:quantum_black=1
+colorscheme quantum
 
 " NERDTree
 autocmd StdinReadPre * let s:std_in=1
