@@ -79,7 +79,7 @@ syntax on
 " Quantum theme
 let g:quantum_italics=1
 let g:quantum_black=1
-colorscheme quantum
+color quantum
 
 " NERDTree
 autocmd StdinReadPre * let s:std_in=1
