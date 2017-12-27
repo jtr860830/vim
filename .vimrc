@@ -38,6 +38,13 @@ if dein#load_state('/Users/jtr860830/.vim/bundles')
   call dein#add('honza/vim-snippets')
   call dein#add('garbas/vim-snipmate')
   call dein#add('Shougo/denite.nvim')
+  call dein#add('Shougo/deoplete.nvim')
+  if !has('nvim')
+    call dein#add('roxma/nvim-yarp')
+    call dein#add('roxma/vim-hug-neovim-rpc')
+  endif
+  call dein#add('zchee/deoplete-clang')
+  call dein#add('zchee/deoplete-go', {'build': 'make'})
 
   " You can specify revision/branch/tag.
   " call dein#add('Shougo/vimshell', { 'rev': '3787e5' })
@@ -74,6 +81,7 @@ set wildignorecase
 set termguicolors
 set backspace=2
 set background=dark
+set completeopt-=preview
 syntax on
 
 " Quantum theme
@@ -128,6 +136,11 @@ autocmd User Flags call Hoist("window", "SyntasticStatuslineFlag")
 autocmd User Flags call Hoist("global", "%{&ignorecase ? '[IC]' : ''}")
 let g:tablabel =
       \ "%N%{flagship#tabmodified()} %{flagship#tabcwds('shorten',',')}"
+
+" Deoplete
+let g:deoplete#enable_at_startup = 1
+let g:deoplete#sources#clang#libclang_path = '/usr/local/Cellar/llvm/5.0.1/lib/libclang.dylib'
+let g:deoplete#sources#clang#clang_header = '/usr/local/Cellar/llvm/5.0.1/lib/clang'
 
 " Golang
 let g:tagbar_type_go = {
