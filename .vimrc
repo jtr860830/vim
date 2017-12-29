@@ -4,15 +4,15 @@ if &compatible
 endif
 
 " Required:
-set runtimepath+=/Users/jtr860830/.vim/bundles/repos/github.com/Shougo/dein.vim
+set runtimepath+=$HOME/.vim/bundles/repos/github.com/Shougo/dein.vim
 
 " Required:
-if dein#load_state('/Users/jtr860830/.vim/bundles')
-  call dein#begin('/Users/jtr860830/.vim/bundles')
+if dein#load_state('$HOME/.vim/bundles')
+  call dein#begin('$HOME/.vim/bundles')
 
   " Let dein manage dein
   " Required:
-  call dein#add('/Users/jtr860830/.vim/bundles/repos/github.com/Shougo/dein.vim')
+  call dein#add('$HOME/.vim/bundles/repos/github.com/Shougo/dein.vim')
 
   " Add or remove your plugins here:
   call dein#add('Shougo/vimproc.vim', {'build' : 'make'})
@@ -35,9 +35,9 @@ if dein#load_state('/Users/jtr860830/.vim/bundles')
   call dein#add('gko/vim-coloresque')
   call dein#add('MarcWeber/vim-addon-mw-utils')
   call dein#add('tomtom/tlib_vim')
-  call dein#add('honza/vim-snippets')
-  call dein#add('garbas/vim-snipmate')
   call dein#add('Shougo/denite.nvim')
+  call dein#add('Shougo/neosnippet')
+  call dein#add('Shougo/neosnippet-snippets')
   call dein#add('Shougo/deoplete.nvim')
   if !has('nvim')
     call dein#add('roxma/nvim-yarp')
@@ -45,6 +45,10 @@ if dein#load_state('/Users/jtr860830/.vim/bundles')
   endif
   call dein#add('zchee/deoplete-clang')
   call dein#add('zchee/deoplete-go', {'build': 'make'})
+  call dein#add('mhartington/nvim-typescript')
+  call dein#add('Shougo/neco-syntax')
+  call dein#add('wokalski/autocomplete-flow')
+  call dein#add('zchee/deoplete-jedi')
 
   " You can specify revision/branch/tag.
   " call dein#add('Shougo/vimshell', { 'rev': '3787e5' })
@@ -83,6 +87,11 @@ set backspace=2
 set background=dark
 set completeopt-=preview
 syntax on
+
+" Key maps
+inoremap <expr><Down>     pumvisible() ? "\<C-n>" : "\<Down>"
+inoremap <expr><Up>       pumvisible() ? "\<C-p>" : "\<Up>"
+inoremap <expr> <CR>       pumvisible() ? "\<C-y>" : "\<CR>"
 
 " Quantum theme
 let g:quantum_italics=1
@@ -141,6 +150,16 @@ let g:tablabel =
 let g:deoplete#enable_at_startup = 1
 let g:deoplete#sources#clang#libclang_path = '/usr/local/Cellar/llvm/5.0.1/lib/libclang.dylib'
 let g:deoplete#sources#clang#clang_header = '/usr/local/Cellar/llvm/5.0.1/lib/clang'
+
+" Neosnippet
+let g:neosnippet#enable_completed_snippet = 1
+let g:neosnippet#enable_complete_done = 1
+let g:neosnippet#enable_snipmate_compatibility = 1
+let g:neosnippet#snippets_directory='$HOME/.vim/bundles/repos/github.com/Shougo/neosnippet-snippets/neosnippets'
+imap <expr><TAB> neosnippet#expandable_or_jumpable() ? "\<Plug>(neosnippet_expand_or_jump)" : "\<TAB>"
+if has('conceal')
+  set conceallevel=2 concealcursor=niv
+endif
 
 " Golang
 let g:tagbar_type_go = {
