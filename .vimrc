@@ -27,6 +27,7 @@ if dein#load_state('$HOME/.vim/bundles')
   call dein#add('majutsushi/tagbar')
   call dein#add('tyrannicaltoucan/vim-quantum')
   call dein#add('fatih/vim-go')
+  call dein#add('pangloss/vim-javascript')
   call dein#add('vim-airline/vim-airline')
   call dein#add('vim-airline/vim-airline-themes')
   call dein#add('tpope/vim-fugitive')
@@ -187,6 +188,13 @@ let g:tagbar_type_go = {
 	\ 'ctagsbin'  : 'gotags',
 	\ 'ctagsargs' : '-sort -silent'
 \ }
+
+" JavaScript
+augroup javascript_folding
+    au!
+    au FileType javascript setlocal foldmethod=syntax
+augroup END
+
 
 " Python
 let g:python_host_prog  = '/usr/local/bin/python2'
