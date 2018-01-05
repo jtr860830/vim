@@ -90,7 +90,7 @@ syntax on
 " Key maps
 inoremap <expr><Down>     pumvisible() ? "\<C-n>" : "\<Down>"
 inoremap <expr><Up>       pumvisible() ? "\<C-p>" : "\<Up>"
-inoremap <expr> <CR>       pumvisible() ? "\<C-y>" : "\<CR>"
+inoremap <expr><CR>       pumvisible() ? "\<C-y>" : "\<CR>"
 
 " Quantum theme
 let g:quantum_italics=1
@@ -133,7 +133,7 @@ set statusline+=%*
 let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
-let g:syntastic_check_on_wq = 0
+let g:syntastic_check_on_wq = 1
 
 " Flagship
 set laststatus=2
