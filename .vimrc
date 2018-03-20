@@ -34,8 +34,6 @@ if dein#load_state('$HOME/.vim/bundles')
   call dein#add('jiangmiao/auto-pairs')
   call dein#add('gko/vim-coloresque')
   call dein#add('Shougo/denite.nvim')
-  call dein#add('Shougo/neosnippet')
-  call dein#add('Shougo/neosnippet-snippets')
   call dein#add('Shougo/deoplete.nvim')
   if !has('nvim')
     call dein#add('roxma/nvim-yarp')
@@ -148,16 +146,6 @@ let g:tablabel =
 let g:deoplete#enable_at_startup = 1
 let g:deoplete#sources#clang#libclang_path = '/usr/local/Cellar/llvm/5.0.1/lib/libclang.dylib'
 let g:deoplete#sources#clang#clang_header = '/usr/local/Cellar/llvm/5.0.1/lib/clang'
-
-" Neosnippet
-let g:neosnippet#enable_completed_snippet = 1
-let g:neosnippet#enable_complete_done = 1
-let g:neosnippet#enable_snipmate_compatibility = 1
-let g:neosnippet#snippets_directory='$HOME/.vim/bundles/repos/github.com/Shougo/neosnippet-snippets/neosnippets'
-imap <expr><TAB> neosnippet#expandable_or_jumpable() ? "\<Plug>(neosnippet_expand_or_jump)" : "\<TAB>"
-if has('conceal')
-  set conceallevel=2 concealcursor=niv
-endif
 
 " Golang
 let g:tagbar_type_go = {
