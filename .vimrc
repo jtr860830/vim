@@ -33,7 +33,6 @@ if dein#load_state('$HOME/.vim/bundles')
   call dein#add('tpope/vim-fugitive')
   call dein#add('jiangmiao/auto-pairs')
   call dein#add('gko/vim-coloresque')
-  call dein#add('Yggdroot/indentLine')
   call dein#add('Shougo/denite.nvim')
   call dein#add('Shougo/deoplete.nvim')
   if !has('nvim')
@@ -85,6 +84,7 @@ set backspace=2
 set background=dark
 set completeopt-=preview
 syntax on
+set list lcs=tab:\│\ 
 
 " Key maps
 inoremap <expr><Down>     pumvisible() ? "\<C-n>" : "\<Down>"
@@ -95,9 +95,6 @@ inoremap <expr><CR>       pumvisible() ? "\<C-y>" : "\<CR>"
 let g:quantum_italics=1
 let g:quantum_black=1
 color quantum
-
-" IndentLine
-let g:indentLine_char = '│'
 
 " NERDTree
 autocmd StdinReadPre * let s:std_in=1
