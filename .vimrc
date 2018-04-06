@@ -71,6 +71,7 @@ set nu
 set ai
 set tabstop=4
 set shiftwidth=4
+set expandtab
 set ic
 set incsearch
 set cursorline
@@ -84,7 +85,6 @@ set backspace=2
 set background=dark
 set completeopt-=preview
 syntax on
-set list lcs=tab:\│\ 
 
 " Key maps
 inoremap <expr><Down>     pumvisible() ? "\<C-n>" : "\<Down>"
