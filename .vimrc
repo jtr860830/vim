@@ -26,9 +26,9 @@ if dein#load_state('$HOME/.vim/bundles')
   call dein#add('majutsushi/tagbar')
   call dein#add('tyrannicaltoucan/vim-quantum')
   call dein#add('fatih/vim-go')
-  call dein#add('pangloss/vim-javascript')
   call dein#add('vim-airline/vim-airline')
   call dein#add('vim-airline/vim-airline-themes')
+  call dein#add('ryanoasis/vim-devicons')
   call dein#add('tpope/vim-fugitive')
   call dein#add('jiangmiao/auto-pairs')
   call dein#add('gko/vim-coloresque')
@@ -38,13 +38,18 @@ if dein#load_state('$HOME/.vim/bundles')
     call dein#add('roxma/nvim-yarp')
     call dein#add('roxma/vim-hug-neovim-rpc')
   endif
-  call dein#add('zchee/deoplete-clang')
+  call dein#add('Shougo/deoplete-clangx')
+  call dein#add('Shougo/neoinclude.vim')
+  call dein#add('sebastianmarkow/deoplete-rust')
   call dein#add('zchee/deoplete-go', {'build': 'make'})
   call dein#add('mhartington/nvim-typescript')
   call dein#add('Shougo/neco-syntax')
   call dein#add('wokalski/autocomplete-flow')
   call dein#add('zchee/deoplete-jedi')
-  call dein#add('ryanoasis/vim-devicons')
+  call dein#add('autozimu/LanguageClient-neovim', {
+    \ 'rev': 'next',
+    \ 'build': './install.sh',
+    \ })
 
   " You can specify revision/branch/tag.
   " call dein#add('Shougo/vimshell', { 'rev': '3787e5' })
@@ -144,8 +149,12 @@ let g:tablabel =
 
 " Deoplete
 let g:deoplete#enable_at_startup = 1
-let g:deoplete#sources#clang#libclang_path = '/usr/local/Cellar/llvm/5.0.1/lib/libclang.dylib'
-let g:deoplete#sources#clang#clang_header = '/usr/local/Cellar/llvm/5.0.1/lib/clang'
+let g:deoplete#enable_smart_case = 1
+let g:LanguageClient_autoStart = 1
+let g:deoplete#sources#rust#racer_binary='$HOME/.cargo/bin/racer'
+let g:deoplete#sources#rust#rust_source_path='/usr/local/Cellar/rust/1.25.0/share/rust/rust_src'
+let g:deoplete#sources#go#gocode_binary = '$GOPATH/bin/gocode'
+let g:deoplete#sources#go#sort_class = ['package', 'func', 'type', 'var', 'const']
 
 " Golang
 let g:tagbar_type_go = {
@@ -175,13 +184,6 @@ let g:tagbar_type_go = {
 	\ 'ctagsbin'  : 'gotags',
 	\ 'ctagsargs' : '-sort -silent'
 \ }
-
-" JavaScript
-augroup javascript_folding
-    au!
-    au FileType javascript setlocal foldmethod=syntax
-augroup END
-
 
 " Python
 let g:python3_host_prog = '/usr/local/bin/python3'
