@@ -33,6 +33,8 @@ if dein#load_state('$HOME/.vim/bundles')
   call dein#add('jiangmiao/auto-pairs')
   call dein#add('gko/vim-coloresque')
   call dein#add('Shougo/denite.nvim')
+  call dein#add('SirVer/ultisnips')
+  call dein#add('honza/vim-snippets')
   call dein#add('Shougo/deoplete.nvim')
   if !has('nvim')
     call dein#add('roxma/nvim-yarp')
@@ -89,11 +91,6 @@ set backspace=2
 set background=dark
 set completeopt-=preview
 syntax on
-
-" Key maps
-inoremap <expr><Down>     pumvisible() ? "\<C-n>" : "\<Down>"
-inoremap <expr><Up>       pumvisible() ? "\<C-p>" : "\<Up>"
-inoremap <expr><CR>       pumvisible() ? "\<C-y>" : "\<CR>"
 
 " Quantum theme
 let g:quantum_italics=1
