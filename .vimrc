@@ -93,6 +93,7 @@ set background=dark
 set completeopt-=preview
 syntax on
 color nova
+highlight Comment gui=italic
 
 " NERDTree
 autocmd StdinReadPre * let s:std_in=1
