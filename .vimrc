@@ -23,7 +23,8 @@ if dein#load_state('$HOME/.vim/bundles')
   call dein#add('vim-syntastic/syntastic')
   call dein#add('tpope/vim-surround')
   call dein#add('alvan/vim-closetag')
-  call dein#add('tyrannicaltoucan/vim-quantum')
+  call dein#add('sheerun/vim-polyglot')
+  call dein#add('trevordmiller/nova-vim')
   call dein#add('fatih/vim-go')
   call dein#add('pangloss/vim-javascript')
   call dein#add('vim-airline/vim-airline')
@@ -91,11 +92,7 @@ set backspace=2
 set background=dark
 set completeopt-=preview
 syntax on
-
-" Quantum theme
-let g:quantum_italics=1
-let g:quantum_black=1
-color quantum
+color nova
 
 " NERDTree
 autocmd StdinReadPre * let s:std_in=1
@@ -120,7 +117,7 @@ let g:NERDTreeIndicatorMapCustom = {
 let g:NERDTreeShowIgnoredStatus = 1
 
 " vim-airline
-let g:airline_theme='quantum'
+let g:airline_theme='nova'
 let g:airline#extensions#tabline#enabled = 1
 let g:airline_powerline_fonts = 1
 let g:airline#extensions#whitespace#enabled = 0
@@ -153,34 +150,5 @@ let g:deoplete#sources#rust#rust_source_path='/usr/local/Cellar/rust/1.25.0/shar
 let g:deoplete#sources#go#gocode_binary = '$GOPATH/bin/gocode'
 let g:deoplete#sources#go#sort_class = ['package', 'func', 'type', 'var', 'const']
 
-" Golang
-let g:tagbar_type_go = {
-	\ 'ctagstype' : 'go',
-	\ 'kinds'     : [
-		\ 'p:package',
-		\ 'i:imports:1',
-		\ 'c:constants',
-		\ 'v:variables',
-		\ 't:types',
-		\ 'n:interfaces',
-		\ 'w:fields',
-		\ 'e:embedded',
-		\ 'm:methods',
-		\ 'r:constructor',
-		\ 'f:functions'
-	\ ],
-	\ 'sro' : '.',
-	\ 'kind2scope' : {
-		\ 't' : 'ctype',
-		\ 'n' : 'ntype'
-	\ },
-	\ 'scope2kind' : {
-		\ 'ctype' : 't',
-		\ 'ntype' : 'n'
-	\ },
-	\ 'ctagsbin'  : 'gotags',
-	\ 'ctagsargs' : '-sort -silent'
-\ }
-
-" Python
+" Neovim Python support
 let g:python3_host_prog = '/usr/local/bin/python3'
