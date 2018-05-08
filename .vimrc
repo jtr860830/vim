@@ -26,7 +26,6 @@ if dein#load_state('$HOME/.vim/bundles')
   call dein#add('sheerun/vim-polyglot')
   call dein#add('trevordmiller/nova-vim')
   call dein#add('fatih/vim-go')
-  call dein#add('pangloss/vim-javascript')
   call dein#add('vim-airline/vim-airline')
   call dein#add('vim-airline/vim-airline-themes')
   call dein#add('ryanoasis/vim-devicons')
@@ -70,7 +69,6 @@ syntax enable
 if dein#check_install()
   call dein#install()
 endif
-
 " End dein Scripts-------------------------
 
 " Global settings
