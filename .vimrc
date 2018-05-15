@@ -24,7 +24,7 @@ if dein#load_state('$HOME/.vim/bundles')
   call dein#add('tpope/vim-surround')
   call dein#add('alvan/vim-closetag')
   call dein#add('sheerun/vim-polyglot')
-  call dein#add('trevordmiller/nova-vim')
+  call dein#add('arcticicestudio/nord-vim')
   call dein#add('fatih/vim-go')
   call dein#add('vim-airline/vim-airline')
   call dein#add('vim-airline/vim-airline-themes')
@@ -90,8 +90,12 @@ set backspace=2
 set background=dark
 set completeopt-=preview
 syntax on
-color nova
-highlight Comment gui=italic
+
+" Colorscheme
+let g:nord_italic = 1
+let g:nord_italic_comments = 1
+let g:nord_comment_brightness = 12
+color nord
 
 " NERDTree
 autocmd StdinReadPre * let s:std_in=1
@@ -116,7 +120,7 @@ let g:NERDTreeIndicatorMapCustom = {
 let g:NERDTreeShowIgnoredStatus = 1
 
 " vim-airline
-let g:airline_theme='nova'
+let g:airline_theme='nord'
 let g:airline#extensions#tabline#enabled = 1
 let g:airline_powerline_fonts = 1
 let g:airline#extensions#whitespace#enabled = 0
