@@ -134,16 +134,6 @@ let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 
-" Flagship
-set laststatus=2
-set showtabline=2
-set guioptions-=e
-autocmd User Flags call Hoist("buffer", "fugitive#statusline")
-autocmd User Flags call Hoist("window", "SyntasticStatuslineFlag")
-autocmd User Flags call Hoist("global", "%{&ignorecase ? '[IC]' : ''}")
-let g:tablabel =
-      \ "%N%{flagship#tabmodified()} %{flagship#tabcwds('shorten',',')}"
-
 " Deoplete
 let g:deoplete#enable_at_startup = 1
 let g:deoplete#enable_smart_case = 1
