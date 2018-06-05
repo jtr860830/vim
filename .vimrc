@@ -136,4 +136,5 @@ let g:deoplete#sources#go#gocode_binary = '$GOPATH/bin/gocode'
 let g:deoplete#sources#go#sort_class = ['package', 'func', 'type', 'var', 'const']
 
 " Neovim Python support
+let g:python_host_prog = '/usr/local/bin/python2'
 let g:python3_host_prog = '/usr/local/bin/python3'
