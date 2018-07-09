@@ -87,6 +87,7 @@ set incsearch
 set cursorline
 set showcmd
 set hlsearch
+set laststatus=2
 set history=1000
 set wildmode=longest,list,full
 set wildignorecase
@@ -129,7 +130,6 @@ let g:airline_theme='nord'
 let g:airline#extensions#tabline#enabled = 1
 let g:airline_powerline_fonts = 1
 let g:airline#extensions#whitespace#enabled = 0
-set laststatus=2
 
 " Deoplete
 let g:deoplete#enable_at_startup = 1
@@ -139,6 +139,9 @@ let g:deoplete#sources#rust#racer_binary='$HOME/.cargo/bin/racer'
 let g:deoplete#sources#rust#rust_source_path='/usr/local/Cellar/rust/1.27.0/share/rust/rust_src'
 let g:deoplete#sources#go#gocode_binary = '$GOPATH/bin/gocode'
 let g:deoplete#sources#go#sort_class = ['package', 'func', 'type', 'var', 'const']
+
+" ALE
+let g:ale_completion_enabled = 1
 
 " Neovim Python support
 let g:python_host_prog = '/usr/local/bin/python2'
