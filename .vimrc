@@ -37,7 +37,7 @@ if dein#load_state('$HOME/.vim/bundles')
   call dein#add('Shougo/neoinclude.vim')
   call dein#add('sebastianmarkow/deoplete-rust')
   call dein#add('zchee/deoplete-go', {'build': 'make'})
-  call dein#add('mhartington/nvim-typescript')
+  call dein#add('mhartington/nvim-typescript', {'build': './install.sh'})
   call dein#add('Shougo/neco-syntax')
   call dein#add('wokalski/autocomplete-flow')
   call dein#add('zchee/deoplete-jedi')
@@ -96,6 +96,7 @@ set backspace=2
 set background=dark
 set completeopt-=preview
 syntax on
+language en_US.UTF-8
 
 " Colorscheme
 let g:nord_italic = 1
@@ -136,7 +137,7 @@ let g:deoplete#enable_at_startup = 1
 let g:deoplete#enable_smart_case = 1
 let g:LanguageClient_autoStart = 1
 let g:deoplete#sources#rust#racer_binary='$HOME/.cargo/bin/racer'
-let g:deoplete#sources#rust#rust_source_path='/usr/local/Cellar/rust/1.27.0/share/rust/rust_src'
+let g:deoplete#sources#rust#rust_source_path='/usr/local/Cellar/rust/1.27.1/share/rust/rust_src'
 let g:deoplete#sources#go#gocode_binary = '$GOPATH/bin/gocode'
 let g:deoplete#sources#go#sort_class = ['package', 'func', 'type', 'var', 'const']
 
