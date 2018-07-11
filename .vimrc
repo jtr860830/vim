@@ -95,6 +95,7 @@ set termguicolors
 set backspace=2
 set background=dark
 set completeopt-=preview
+set foldmethod=indent
 syntax on
 language en_US.UTF-8
 
