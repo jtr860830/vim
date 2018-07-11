@@ -141,9 +141,6 @@ let g:deoplete#sources#rust#rust_source_path='/usr/local/Cellar/rust/1.27.1/shar
 let g:deoplete#sources#go#gocode_binary = '$GOPATH/bin/gocode'
 let g:deoplete#sources#go#sort_class = ['package', 'func', 'type', 'var', 'const']
 
-" ALE
-let g:ale_completion_enabled = 1
-
 " Neovim Python support
 let g:python_host_prog = '/usr/local/bin/python2'
 let g:python3_host_prog = '/usr/local/bin/python3'
