@@ -33,7 +33,7 @@ if dein#load_state('$HOME/.vim/bundles')
     call dein#add('roxma/nvim-yarp')
     call dein#add('roxma/vim-hug-neovim-rpc')
   endif
-  call dein#add('Shougo/deoplete-clangx')
+  call dein#add('zchee/deoplete-clang')
   call dein#add('Shougo/neoinclude.vim')
   call dein#add('sebastianmarkow/deoplete-rust')
   call dein#add('zchee/deoplete-go', {'build': 'make'})
@@ -138,6 +138,8 @@ let g:airline#extensions#whitespace#enabled = 0
 let g:deoplete#enable_at_startup = 1
 let g:deoplete#enable_smart_case = 1
 let g:LanguageClient_autoStart = 1
+let g:deoplete#sources#clang#libclang_path = '/usr/local/opt/llvm/lib/libclang.dylib'
+let g:deoplete#sources#clang#clang_header = '/usr/local/opt/llvm/lib/clang'
 let g:deoplete#sources#ternjs#types = 1
 let g:deoplete#sources#ternjs#depths = 1
 let g:deoplete#sources#ternjs#docs = 1
