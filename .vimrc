@@ -40,6 +40,7 @@ if dein#load_state('$HOME/.vim/bundles')
   call dein#add('mhartington/nvim-typescript', {'build': './install.sh'})
   call dein#add('Shougo/neco-syntax')
   call dein#add('wokalski/autocomplete-flow')
+  call dein#add('carlitux/deoplete-ternjs')
   call dein#add('zchee/deoplete-jedi')
   call dein#add('autozimu/LanguageClient-neovim', {
     \ 'rev': 'next',
@@ -137,6 +138,9 @@ let g:airline#extensions#whitespace#enabled = 0
 let g:deoplete#enable_at_startup = 1
 let g:deoplete#enable_smart_case = 1
 let g:LanguageClient_autoStart = 1
+let g:deoplete#sources#ternjs#types = 1
+let g:deoplete#sources#ternjs#depths = 1
+let g:deoplete#sources#ternjs#docs = 1
 let g:deoplete#sources#rust#racer_binary='$HOME/.cargo/bin/racer'
 let g:deoplete#sources#rust#rust_source_path='/usr/local/Cellar/rust/1.27.1/share/rust/rust_src'
 let g:deoplete#sources#go#gocode_binary = '$GOPATH/bin/gocode'
