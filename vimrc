@@ -1,4 +1,4 @@
-source ./config/dein.vimrc
-source ./config/general.vimrc
-source ./config/theme.vimrc
-source ./config/plugins.vimrc
+source $HOME/.vim/config/dein.vimrc
+source $HOME/.vim/config/general.vimrc
+source $HOME/.vim/config/theme.vimrc
+source $HOME/.vim/config/plugins.vimrc
