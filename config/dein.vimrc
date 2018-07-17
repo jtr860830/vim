@@ -4,15 +4,15 @@ if &compatible
 endif
 
 " Required:
-set runtimepath+=$HOME/.vim/bundles/repos/github.com/Shougo/dein.vim
+set runtimepath+=$HOME/.vim/plugins/manager/repos/github.com/Shougo/dein.vim
 
 " Required:
-if dein#load_state('$HOME/.vim/bundles')
-  call dein#begin('$HOME/.vim/bundles')
+if dein#load_state('$HOME/.vim/plugins/manager')
+  call dein#begin('$HOME/.vim/plugins/manager')
 
   " Let dein manage dein
   " Required:
-  call dein#add('$HOME/.vim/bundles/repos/github.com/Shougo/dein.vim')
+  call dein#add('$HOME/.vim/plugins/manager')
 
   " Add or remove your plugins here:
   " UI
@@ -29,10 +29,6 @@ if dein#load_state('$HOME/.vim/bundles')
   call dein#add('honza/vim-snippets')
   " Auto Completion
   call dein#add('Shougo/deoplete.nvim')
-  if !has('nvim')
-    call dein#add('roxma/nvim-yarp')
-    call dein#add('roxma/vim-hug-neovim-rpc')
-  endif
   call dein#add('zchee/deoplete-clang')
   call dein#add('Shougo/neoinclude.vim')
   call dein#add('sebastianmarkow/deoplete-rust')
