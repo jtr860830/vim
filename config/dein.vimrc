@@ -16,7 +16,7 @@ if dein#load_state('$HOME/.vim/bundles')
 
   " Add or remove your plugins here:
   " UI
-  call dein#add('arcticicestudio/nord-vim')
+  call dein#add('hzchirs/vim-material')
   call dein#add('scrooloose/nerdtree')
   call dein#add('Xuyuanp/nerdtree-git-plugin')
   call dein#add('tpope/vim-fugitive')
