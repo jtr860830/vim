@@ -1,5 +1,4 @@
 " Colorscheme
-let g:material_style='palenight'
 colorscheme vim-material
 
 " vim-airline
