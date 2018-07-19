@@ -3,18 +3,14 @@ if &compatible
   set nocompatible               " Be iMproved
 endif
 
-" Required:
 set runtimepath+=$HOME/.vim/plugins/manager/repos/github.com/Shougo/dein.vim
 
-" Required:
 if dein#load_state('$HOME/.vim/plugins/manager')
   call dein#begin('$HOME/.vim/plugins/manager')
 
   " Let dein manage dein
-  " Required:
   call dein#add('$HOME/.vim/plugins/manager')
 
-  " Add or remove your plugins here:
   " UI
   call dein#add('hzchirs/vim-material')
   call dein#add('scrooloose/nerdtree')
@@ -53,21 +49,20 @@ if dein#load_state('$HOME/.vim/plugins/manager')
   call dein#add('alvan/vim-closetag')
   call dein#add('jiangmiao/auto-pairs')
   call dein#add('gko/vim-coloresque')
+  call dein#add('itchyny/calendar.vim')
   call dein#add('fatih/vim-go')
 
-  " You can specify revision/branch/tag.
+  " Specify revision/branch/tag.
   " call dein#add('Shougo/vimshell', { 'rev': '3787e5' })
 
-  " Required:
   call dein#end()
   call dein#save_state()
 endif
 
-" Required:
 filetype plugin indent on
 syntax enable
 
-" If you want to install not installed plugins on startup.
+" Install not installed plugins on startup.
 if dein#check_install()
   call dein#install()
 endif
