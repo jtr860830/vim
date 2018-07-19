@@ -1,8 +1,10 @@
 " General settings
 set nu
 set ai
-set tabstop=4
-set shiftwidth=4
+set si
+set shiftwidth=2
+set tabstop=2
+set softtabstop=2
 set expandtab
 set ic
 set incsearch
