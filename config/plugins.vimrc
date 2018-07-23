@@ -43,7 +43,7 @@ let g:deoplete#sources#ternjs#types = 1
 let g:deoplete#sources#ternjs#depths = 1
 let g:deoplete#sources#ternjs#docs = 1
 let g:deoplete#sources#rust#racer_binary='$HOME/.cargo/bin/racer'
-let g:deoplete#sources#rust#rust_source_path='/usr/local/Cellar/rust/1.27.1/share/rust/rust_src'
+let g:deoplete#sources#rust#rust_source_path='/usr/local/Cellar/rust/1.27.2/share/rust/rust_src'
 let g:deoplete#sources#go#gocode_binary = '$GOPATH/bin/gocode'
 let g:deoplete#sources#go#sort_class = ['package', 'func', 'type', 'var', 'const']
 
