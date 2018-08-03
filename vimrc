@@ -10,6 +10,7 @@ if dein#load_state('$HOME/.vim/plugins/manager')
 
   " Let dein manage dein
   call dein#add('$HOME/.vim/plugins/manager')
+  call dein#add('Shougo/dein.vim')
 
   " UI
   call dein#add('hzchirs/vim-material')
