@@ -71,6 +71,6 @@ if dein#check_install()
 endif
 
 " Configuration source
-source $HOME/.vim/config/general.vimrc
-source $HOME/.vim/config/theme.vimrc
-source $HOME/.vim/config/plugins.vimrc
+source $HOME/.vim/config/general.vim
+source $HOME/.vim/config/theme.vim
+source $HOME/.vim/config/plugins.vim
