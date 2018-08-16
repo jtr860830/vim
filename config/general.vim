@@ -18,7 +18,7 @@ set wildignorecase
 set termguicolors
 set backspace=2
 set background=dark
-set completeopt-=preview
+set completeopt=noinsert,menuone,noselect
 set foldmethod=indent
 syntax on
 language en_US.UTF-8

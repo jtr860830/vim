@@ -1,74 +1,67 @@
-" Plugin manager dein
-if &compatible
-  set nocompatible               " Be iMproved
+" Plugin manager
+" Automatic install vim-plug
+if empty(glob('~/.vim/autoload/plug.vim'))
+  silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
+    \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+  autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
 endif
 
-set runtimepath+=$HOME/.vim/plugins/manager/repos/github.com/Shougo/dein.vim
-
-if dein#load_state('$HOME/.vim/plugins/manager')
-  call dein#begin('$HOME/.vim/plugins/manager')
-
-  " Let dein manage dein
-  call dein#add('$HOME/.vim/plugins/manager')
-  call dein#add('Shougo/dein.vim')
+call plug#begin('~/.vim/plugged')
 
   " UI
-  call dein#add('hzchirs/vim-material')
-  call dein#add('scrooloose/nerdtree')
-  call dein#add('ryanoasis/vim-devicons')
-  call dein#add('tiagofumo/vim-nerdtree-syntax-highlight')
-  call dein#add('Xuyuanp/nerdtree-git-plugin')
-  call dein#add('tpope/vim-fugitive')
-  call dein#add('majutsushi/tagbar')
-  call dein#add('vim-airline/vim-airline')
-  call dein#add('vim-airline/vim-airline-themes')
-  " Snippets
-  call dein#add('SirVer/ultisnips')
-  call dein#add('honza/vim-snippets')
+  Plug 'hzchirs/vim-material'
+  Plug 'vim-airline/vim-airline'
+  Plug 'vim-airline/vim-airline-themes'
+  Plug 'scrooloose/nerdtree'
+  Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
+  Plug 'Xuyuanp/nerdtree-git-plugin'
+  Plug 'tpope/vim-fugitive'
+  Plug 'majutsushi/tagbar'
+  Plug 'ryanoasis/vim-devicons'
   " Auto Completion
-  call dein#add('Shougo/deoplete.nvim')
-  call dein#add('zchee/deoplete-clang')
-  call dein#add('Shougo/neoinclude.vim')
-  call dein#add('sebastianmarkow/deoplete-rust')
-  call dein#add('zchee/deoplete-go', {'build': 'make'})
-  call dein#add('mhartington/nvim-typescript', {'build': './install.sh'})
-  call dein#add('Shougo/neco-syntax')
-  call dein#add('wokalski/autocomplete-flow')
-  call dein#add('carlitux/deoplete-ternjs')
-  call dein#add('zchee/deoplete-jedi')
-  call dein#add('autozimu/LanguageClient-neovim', {
-    \ 'rev': 'next',
-    \ 'build': './install.sh',
-    \ })
+  Plug 'roxma/nvim-yarp'
+  Plug 'ncm2/ncm2'
+  Plug 'ncm2/ncm2-match-highlight'
+  Plug 'ncm2/ncm2-bufword'
+  Plug 'ncm2/ncm2-path'
+  Plug 'ncm2/ncm2-github'
+  Plug 'ncm2/ncm2-ultisnips'
+  Plug 'ncm2/ncm2-syntax' | Plug 'Shougo/neco-syntax'
+  Plug 'ncm2/ncm2-neoinclude' | Plug 'Shougo/neoinclude.vim'
+  Plug 'ncm2/ncm2-cssomni'
+  Plug 'ncm2/ncm2-tern',  {'do': 'npm install'}
+  Plug 'ncm2/nvim-typescript', {'do': './install.sh'}
+  Plug 'ncm2/ncm2-jedi'
+  Plug 'ncm2/ncm2-racer'
+  Plug 'ncm2/ncm2-pyclang'
+  Plug 'ncm2/ncm2-go'
+  Plug 'phpactor/ncm2-phpactor'
+  Plug 'yuki-ycino/ncm2-dictionary'
+  Plug 'filipekiss/ncm2-look.vim'
+  Plug 'HerringtonDarkholme/yats.vim'
+  Plug 'phpactor/phpactor' ,  {'do': 'composer install', 'for': 'php'}
+  Plug 'SirVer/ultisnips'
+  Plug 'autozimu/LanguageClient-neovim', {
+    \ 'branch': 'next',
+    \ 'do': 'bash install.sh',
+    \ }
   " Syntax
-  call dein#add('w0rp/ale')
-  call dein#add('sheerun/vim-polyglot')
+  Plug 'w0rp/ale'
+  Plug 'sheerun/vim-polyglot'
   " Tools
-  call dein#add('Shougo/vimproc.vim', {'build' : 'make'})
-  call dein#add('Shougo/denite.nvim')
-  call dein#add('easymotion/vim-easymotion')
-  call dein#add('tpope/vim-surround')
-  call dein#add('alvan/vim-closetag')
-  call dein#add('jiangmiao/auto-pairs')
-  call dein#add('gko/vim-coloresque')
-  call dein#add('itchyny/calendar.vim')
-  call dein#add('airblade/vim-gitgutter')
-  call dein#add('fatih/vim-go')
+  Plug 'Shougo/vimproc.vim', {'do' : 'make'}
+  Plug 'Shougo/denite.nvim', {'do' : ':UpdateRemotePlugins'}
+  Plug 'easymotion/vim-easymotion'
+  Plug 'tpope/vim-surround'
+  Plug 'alvan/vim-closetag'
+  Plug 'jiangmiao/auto-pairs'
+  Plug 'gko/vim-coloresque'
+  Plug 'itchyny/calendar.vim'
+  Plug 'airblade/vim-gitgutter'
+  Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 
-  " Specify revision/branch/tag
-  " call dein#add('Shougo/vimshell', { 'rev': '3787e5' })
-
-  call dein#end()
-  call dein#save_state()
-endif
-
-filetype plugin indent on
-syntax enable
-
-" Install not installed plugins on startup.
-if dein#check_install()
-  call dein#install()
-endif
+call plug#end()
+" End Plugin manager
 
 " Configuration source
 source $HOME/.vim/config/general.vim

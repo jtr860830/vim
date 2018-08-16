@@ -33,19 +33,12 @@ let g:NERDTreePatternMatchHighlightFullName = 1
 let g:NERDTreeHighlightFolders = 1
 let g:NERDTreeHighlightFoldersFullName = 1
 
-" Deoplete
-let g:deoplete#enable_at_startup = 1
-let g:deoplete#enable_smart_case = 1
-let g:LanguageClient_autoStart = 1
-let g:deoplete#sources#clang#libclang_path = '/usr/local/opt/llvm/lib/libclang.dylib'
-let g:deoplete#sources#clang#clang_header = '/usr/local/opt/llvm/lib/clang'
-let g:deoplete#sources#ternjs#types = 1
-let g:deoplete#sources#ternjs#depths = 1
-let g:deoplete#sources#ternjs#docs = 1
-let g:deoplete#sources#rust#racer_binary='$HOME/.cargo/bin/racer'
-let g:deoplete#sources#rust#rust_source_path='/usr/local/Cellar/rust/1.28.0/share/rust/rust_src'
-let g:deoplete#sources#go#gocode_binary = '$GOPATH/bin/gocode'
-let g:deoplete#sources#go#sort_class = ['package', 'func', 'type', 'var', 'const']
+" nvim-completion-manager
+autocmd BufEnter * call ncm2#enable_for_buffer()
+let g:ncm2#match_highlight = 'italic'
+let g:ncm2_look_enabled = 1
+let g:ncm2_look_mark = '👀'
+let g:ncm2_pyclang#library_path = '/usr/local/opt/llvm/lib'
 
 " UltiSnips
 let g:UltiSnipsExpandTrigger="<tab>"
