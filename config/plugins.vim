@@ -35,7 +35,7 @@ let g:NERDTreeHighlightFoldersFullName = 1
 
 " nvim-completion-manager
 autocmd BufEnter * call ncm2#enable_for_buffer()
-let g:ncm2#match_highlight = 'italic'
+let g:ncm2#match_highlight = 'mono-space'
 let g:ncm2_look_enabled = 1
 let g:ncm2_look_mark = '👀'
 let g:ncm2_pyclang#library_path = '/usr/local/opt/llvm/lib'

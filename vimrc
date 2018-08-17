@@ -19,7 +19,6 @@ call plug#begin('~/.vim/plugged')
   Plug 'majutsushi/tagbar'
   Plug 'ryanoasis/vim-devicons'
   " Auto Completion
-  Plug 'roxma/nvim-yarp'
   Plug 'ncm2/ncm2'
   Plug 'ncm2/ncm2-match-highlight'
   Plug 'ncm2/ncm2-bufword'
@@ -51,6 +50,7 @@ call plug#begin('~/.vim/plugged')
   " Tools
   Plug 'Shougo/vimproc.vim', {'do' : 'make'}
   Plug 'Shougo/denite.nvim', {'do' : ':UpdateRemotePlugins'}
+  Plug 'roxma/nvim-yarp'
   Plug 'easymotion/vim-easymotion'
   Plug 'tpope/vim-surround'
   Plug 'alvan/vim-closetag'
