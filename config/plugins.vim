@@ -41,6 +41,6 @@ let g:calendar_google_task = 1
 let g:ycm_global_ycm_extra_conf='~/.vim/.ycm_extra_conf.py'
 
 " UltiSnips
-let g:UltiSnipsExpandTrigger="<s-tab>"
-let g:UltiSnipsJumpForwardTrigger="<c-b>"
+let g:UltiSnipsExpandTrigger="<c-c>"
+let g:UltiSnipsJumpForwardTrigger="<c-x>"
 let g:UltiSnipsJumpBackwardTrigger="<c-z>"
