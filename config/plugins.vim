@@ -33,29 +33,14 @@ let g:NERDTreePatternMatchHighlightFullName = 1
 let g:NERDTreeHighlightFolders = 1
 let g:NERDTreeHighlightFoldersFullName = 1
 
-" nvim-completion-manager
-autocmd BufEnter * call ncm2#enable_for_buffer()
-let g:ncm2#match_highlight = 'mono-space'
-let g:ncm2_look_enabled = 1
-let g:ncm2_look_mark = '👀'
-let g:ncm2_pyclang#library_path = '/usr/local/opt/llvm/lib'
-function! UltiSnipsExpandOrJumpOrTab()
-  call UltiSnips#ExpandSnippetOrJump()
-  if g:ulti_expand_or_jump_res > 0
-    return ""
-  else
-    return "\<Tab>"
-  endif
-endfunction
-inoremap <silent> <expr> <Tab> ncm2_ultisnips#expand_or("\<Plug>(ultisnips_try_expand)")
-inoremap <silent> <Plug>(ultisnips_try_expand) <C-R>=UltiSnipsExpandOrJumpOrTab()<CR>
-snoremap <silent> <Tab> <Esc>:call UltiSnips#ExpandSnippetOrJump()<CR>
-
-" UltiSnips
-let g:UltiSnipsExpandTrigger = "<Plug>(ultisnips_expand_or_jump)"
-let g:UltiSnipsJumpForwardTrigger = "<Plug>(ultisnips_expand_or_jump)"
-let g:UltiSnipsJumpBackwardTrigger = "<S-Tab>"
-
 " Calendar
 let g:calendar_google_calendar = 1
 let g:calendar_google_task = 1
+
+" YouCompleteMe
+let g:ycm_global_ycm_extra_conf='~/.vim/.ycm_extra_conf.py'
+
+" UltiSnips
+let g:UltiSnipsExpandTrigger="<s-tab>"
+let g:UltiSnipsJumpForwardTrigger="<c-b>"
+let g:UltiSnipsJumpBackwardTrigger="<c-z>"

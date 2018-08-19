@@ -19,38 +19,15 @@ call plug#begin('~/.vim/plugged')
   Plug 'majutsushi/tagbar'
   Plug 'ryanoasis/vim-devicons'
   " Auto Completion
-  Plug 'ncm2/ncm2'
-  Plug 'ncm2/ncm2-match-highlight'
-  Plug 'ncm2/ncm2-bufword'
-  Plug 'ncm2/ncm2-path'
-  Plug 'ncm2/ncm2-github'
-  Plug 'ncm2/ncm2-ultisnips'
-  Plug 'ncm2/ncm2-syntax' | Plug 'Shougo/neco-syntax'
-  Plug 'ncm2/ncm2-neoinclude' | Plug 'Shougo/neoinclude.vim'
-  Plug 'ncm2/ncm2-cssomni'
-  Plug 'ncm2/ncm2-tern',  {'do': 'npm install'}
-  Plug 'ncm2/nvim-typescript', {'do': './install.sh'}
-  Plug 'ncm2/ncm2-jedi'
-  Plug 'ncm2/ncm2-racer'
-  Plug 'ncm2/ncm2-pyclang'
-  Plug 'ncm2/ncm2-go'
-  Plug 'phpactor/ncm2-phpactor'
-  Plug 'yuki-ycino/ncm2-dictionary'
-  Plug 'filipekiss/ncm2-look.vim'
-  Plug 'HerringtonDarkholme/yats.vim'
-  Plug 'phpactor/phpactor' ,  {'do': 'composer install', 'for': 'php'}
+  Plug 'Valloric/YouCompleteMe', { 'do': './install.py --all' }
   Plug 'SirVer/ultisnips'
-  Plug 'autozimu/LanguageClient-neovim', {
-    \ 'branch': 'next',
-    \ 'do': 'bash install.sh',
-    \ }
+  Plug 'honza/vim-snippets'
   " Syntax
   Plug 'w0rp/ale'
   Plug 'sheerun/vim-polyglot'
   " Tools
   Plug 'Shougo/vimproc.vim', {'do' : 'make'}
   Plug 'Shougo/denite.nvim', {'do' : ':UpdateRemotePlugins'}
-  Plug 'roxma/nvim-yarp'
   Plug 'easymotion/vim-easymotion'
   Plug 'tpope/vim-surround'
   Plug 'alvan/vim-closetag'
