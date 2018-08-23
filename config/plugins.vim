@@ -39,11 +39,13 @@ let g:calendar_google_task = 1
 
 " YouCompleteMe
 let g:ycm_global_ycm_extra_conf='~/.vim/.ycm_extra_conf.py'
+let g:ycm_key_list_select_completion = ['<C-n>', '<Down>']
+let g:ycm_key_list_previous_completion = ['<C-p>', '<Up>']
 
 " UltiSnips
-let g:UltiSnipsExpandTrigger="<c-c>"
-let g:UltiSnipsJumpForwardTrigger="<c-x>"
-let g:UltiSnipsJumpBackwardTrigger="<c-z>"
+let g:UltiSnipsExpandTrigger="<C-c>"
+let g:UltiSnipsJumpForwardTrigger="<C-x>"
+let g:UltiSnipsJumpBackwardTrigger="<C-z>"
 
 " Vim-Go
 let g:go_highlight_types = 1
