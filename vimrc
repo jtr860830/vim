@@ -35,7 +35,7 @@ call plug#begin('~/.vim/plugged')
   Plug 'gko/vim-coloresque'
   Plug 'itchyny/calendar.vim'
   Plug 'airblade/vim-gitgutter'
-  Plug 'fatih/vim-go'
+  Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 
 call plug#end()
 " End Plugin manager
