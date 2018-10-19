@@ -15,6 +15,8 @@ set laststatus=2
 set history=1000
 set wildmode=longest,list,full
 set wildignorecase
+let &t_8f="\<Esc>[38;2;%lu;%lu;%lum"
+let &t_8b="\<Esc>[48;2;%lu;%lu;%lum"
 set termguicolors
 set backspace=2
 set background=dark
