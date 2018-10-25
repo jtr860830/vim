@@ -11,9 +11,9 @@ In home directory,
 ```
 git clone https://github.com/jtr860830/.vim.git
 ```
-or if you are a neovim user
+or if you are a neovim user just look
 ```
-git clone https://github.com/jtr860830/.vim.git && ln -s $HOME/.vim/vimrc $HOME/.config/nvim/init.vim
+:help nvim-from-vim
 ```
 
 use (neo)vim to open any file, vim plugin will be automatically installed.
