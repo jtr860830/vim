@@ -24,4 +24,3 @@ set completeopt=longest,menu
 set foldmethod=indent
 syntax on
 language en_US.UTF-8
-let b:did_ftplugin = 1
