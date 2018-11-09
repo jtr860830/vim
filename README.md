@@ -9,11 +9,11 @@ Backup your original `.vimrc` and `.vim` settings.
 In home directory, 
 
 ```
-git clone https://github.com/jtr860830/.vim.git
+git clone https://github.com/jtr860830/.vim.git && mv .vim/init.vim .vim/vimrc
 ```
-or if you are a neovim user just look
+or if you are a neovim user
 ```
-:help nvim-from-vim
+git clone https://github.com/jtr860830/.vim.git .config/nvim
 ```
 
 use (neo)vim to open any file, vim plugin will be automatically installed.
