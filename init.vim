@@ -32,6 +32,7 @@ call plug#begin('~/.config/nvim/plugged')
   Plug 'tpope/vim-surround'
   Plug 'alvan/vim-closetag'
   Plug 'jiangmiao/auto-pairs'
+  Plug 'andymass/vim-matchup'
   Plug 'gko/vim-coloresque'
   Plug 'itchyny/calendar.vim'
   Plug 'airblade/vim-gitgutter'
