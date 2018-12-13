@@ -25,6 +25,9 @@ call plug#begin('~/.config/nvim/plugged')
   " Syntax
   Plug 'w0rp/ale'
   Plug 'sheerun/vim-polyglot'
+  " Programming Language
+  Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
+  Plug 'rust-lang/rust.vim'
   " Tools
   Plug 'Shougo/vimproc.vim', {'do' : 'make'}
   Plug 'Shougo/denite.nvim', {'do' : ':UpdateRemotePlugins'}
@@ -36,7 +39,6 @@ call plug#begin('~/.config/nvim/plugged')
   Plug 'gko/vim-coloresque'
   Plug 'itchyny/calendar.vim'
   Plug 'airblade/vim-gitgutter'
-  Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 
 call plug#end()
 " End Plugin manager
