@@ -1,8 +1,3 @@
-" Plugin settings
-
-" Disabling default ftplugins
-let b:did_ftplugin = 1
-
 " Neovim Python support
 let g:python_host_prog = '/usr/local/bin/python2'
 let g:python3_host_prog = '/usr/local/bin/python3'
@@ -53,10 +48,6 @@ let g:ycm_key_list_stop_completion = ['<C-y>', '<Tab>']
 let g:UltiSnipsExpandTrigger="<S-Tab>"
 let g:UltiSnipsJumpForwardTrigger="<C-x>"
 let g:UltiSnipsJumpBackwardTrigger="<C-z>"
-
-" ALE
-let g:ale_sign_error = ''
-let g:ale_sign_warning = ''
 
 " Vim-Go
 let g:go_auto_sameids = 1
