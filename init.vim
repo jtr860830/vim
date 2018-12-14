@@ -23,7 +23,7 @@ call plug#begin('~/.config/nvim/plugged')
   Plug 'SirVer/ultisnips'
   Plug 'honza/vim-snippets'
   " Syntax Checker
-  Plug 'neomake/neomake'
+  Plug 'w0rp/ale'
   " Language Pack
   Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
   Plug 'rust-lang/rust.vim'
