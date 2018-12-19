@@ -50,8 +50,8 @@ let g:UltiSnipsJumpForwardTrigger="<C-x>"
 let g:UltiSnipsJumpBackwardTrigger="<C-z>"
 
 " ALE
-let g:ale_sign_error = ''
-let g:ale_sign_warning = ''
+let g:ale_sign_error = '✗'
+let g:ale_sign_warning = '⚡'
 
 " Vim-Go
 let g:go_auto_sameids = 1
