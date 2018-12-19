@@ -50,6 +50,8 @@ let g:UltiSnipsJumpForwardTrigger="<C-x>"
 let g:UltiSnipsJumpBackwardTrigger="<C-z>"
 
 " ALE
+highlight link ALEErrorSign    Error
+highlight link ALEWarningSign  Warning
 let g:ale_sign_error = '✗'
 let g:ale_sign_warning = '⚡'
 
