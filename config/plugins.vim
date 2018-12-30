@@ -3,7 +3,7 @@ let g:python_host_prog = '/usr/local/bin/python2'
 let g:python3_host_prog = '/usr/local/bin/python3'
 
 " Neovim Ruby support
-let g:ruby_host_prog = '/usr/local/lib/ruby/gems/2.5.0/bin/neovim-ruby-host'
+let g:ruby_host_prog = '/usr/local/lib/ruby/gems/2.6.0/bin/neovim-ruby-host'
 
 " NERDTree
 autocmd StdinReadPre * let s:std_in=1
@@ -68,3 +68,6 @@ let g:go_highlight_operators = 1
 let g:go_highlight_extra_types = 1
 let g:go_highlight_build_constraints = 1
 let g:go_highlight_generate_tags = 1
+
+" Python
+let g:python_highlight_all = 1
