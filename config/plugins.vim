@@ -51,9 +51,9 @@ let g:UltiSnipsJumpBackwardTrigger="<C-z>"
 
 " ALE
 highlight link ALEErrorSign Error
-highlight link ALEWarningSign Warning
+highlight link ALEWarningSign WarningMsg
 highlight link ALEVirtualTextError Error
-highlight link ALEVirtualTextWarning Warning
+highlight link ALEVirtualTextWarning WarningMsg
 let g:ale_sign_error = '✘'
 let g:ale_sign_warning = '➢'
 let g:ale_sign_info = '➣'
