@@ -19,7 +19,7 @@ call plug#begin('~/.config/nvim/plugged')
   Plug 'majutsushi/tagbar'
   Plug 'ryanoasis/vim-devicons'
   " Auto Completion
-  Plug 'Valloric/YouCompleteMe', { 'do': './install.py --all' }
+  Plug 'Valloric/YouCompleteMe', { 'do': 'python3 ./install.py --all' }
   Plug 'SirVer/ultisnips'
   Plug 'honza/vim-snippets'
   " Syntax Checker
