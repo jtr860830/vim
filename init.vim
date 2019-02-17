@@ -27,28 +27,9 @@ call plug#begin('~/.config/nvim/plugged')
   " Language Pack
   Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
   Plug 'rust-lang/rust.vim'
-  Plug 'octol/vim-cpp-enhanced-highlight'
-  Plug 'pangloss/vim-javascript'
-  Plug 'leafgarland/typescript-vim'
-  Plug 'othree/html5.vim'
-  Plug 'posva/vim-vue'
-  Plug 'vim-python/python-syntax'
-  Plug 'udalov/kotlin-vim'
-  Plug 'keith/swift.vim'
-  Plug 'StanAngeloff/php.vim'
   Plug 'dart-lang/dart-vim-plugin'
   Plug 'elixir-editors/vim-elixir'
-  Plug 'tomlion/vim-solidity'
-  Plug 'plasticboy/vim-markdown'
-  Plug 'stephpy/vim-yaml'
-  Plug 'cespare/vim-toml'
-  Plug 'ekalinin/Dockerfile.vim'
-  Plug 'uarun/vim-protobuf'
-  Plug 'jparise/vim-graphql'
-  Plug 'tpope/vim-git'
-  Plug 'pboettch/vim-cmake-syntax'
-  Plug 'tpope/vim-cucumber'
-  Plug 'isobit/vim-caddyfile'
+  Plug 'sheerun/vim-polyglot'
   " Tools
   Plug 'Shougo/vimproc.vim', {'do' : 'make'}
   Plug 'Shougo/denite.nvim', {'do' : ':UpdateRemotePlugins'}
