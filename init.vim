@@ -16,6 +16,7 @@ call plug#begin('~/.config/nvim/plugged')
   Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
   Plug 'Xuyuanp/nerdtree-git-plugin'
   Plug 'tpope/vim-fugitive'
+  Plug 'airblade/vim-gitgutter'
   Plug 'majutsushi/tagbar'
   Plug 'ryanoasis/vim-devicons'
   " Auto Completion
@@ -31,7 +32,6 @@ call plug#begin('~/.config/nvim/plugged')
   Plug 'elixir-editors/vim-elixir'
   Plug 'sheerun/vim-polyglot'
   " Tools
-  Plug 'Shougo/vimproc.vim', {'do' : 'make'}
   Plug 'Shougo/denite.nvim', {'do' : ':UpdateRemotePlugins'}
   Plug 'easymotion/vim-easymotion'
   Plug 'tpope/vim-surround'
@@ -40,7 +40,6 @@ call plug#begin('~/.config/nvim/plugged')
   Plug 'andymass/vim-matchup'
   Plug 'gko/vim-coloresque'
   Plug 'itchyny/calendar.vim'
-  Plug 'airblade/vim-gitgutter'
 
 call plug#end()
 " End Plugin manager
