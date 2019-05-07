@@ -61,6 +61,8 @@ let g:ale_virtualtext_cursor = 1
 let g:ale_virtualtext_prefix = '➤ '
 
 " Vim-Go
+let g:go_def_mode='gopls'
+let g:go_info_mode='gopls'
 let g:go_template_autocreate = 0
 let g:go_auto_sameids = 1
 let g:go_highlight_variable_declarations = 1
