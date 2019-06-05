@@ -43,6 +43,8 @@ let g:ycm_global_ycm_extra_conf='~/.config/nvim/.ycm_extra_conf.py'
 let g:ycm_key_list_select_completion = ['<C-n>', '<Down>']
 let g:ycm_key_list_previous_completion = ['<C-p>', '<Up>']
 let g:ycm_key_list_stop_completion = ['<C-y>', '<Tab>']
+let g:ycm_error_symbol = '•'
+let g:ycm_warning_symbol = '•'
 
 " UltiSnips
 let g:UltiSnipsExpandTrigger="<S-Tab>"
