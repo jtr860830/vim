@@ -1,6 +1,7 @@
 " General settings
 set nu
 set rnu
+set scl=yes
 set ai
 set si
 set sw=2
