@@ -33,13 +33,13 @@ call plug#begin('~/.config/nvim/plugged')
   Plug 'sheerun/vim-polyglot'
   " Tools
   Plug 'Shougo/denite.nvim', {'do' : ':UpdateRemotePlugins'}
+  Plug 'junegunn/fzf.vim' | Plug '/usr/local/opt/fzf'
   Plug 'easymotion/vim-easymotion'
   Plug 'tpope/vim-surround'
   Plug 'alvan/vim-closetag'
   Plug 'jiangmiao/auto-pairs'
   Plug 'andymass/vim-matchup'
   Plug 'gko/vim-coloresque'
-  Plug 'itchyny/calendar.vim'
 
 call plug#end()
 " End Plugin manager
