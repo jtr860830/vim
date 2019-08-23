@@ -9,7 +9,8 @@ endif
 call plug#begin('~/.config/nvim/plugged')
 
   " UI
-  Plug 'joshdick/onedark.vim'
+  Plug 'kaicataldo/material.vim'
+  Plug 'hzchirs/vim-material'
   Plug 'vim-airline/vim-airline'
   Plug 'vim-airline/vim-airline-themes'
   Plug 'scrooloose/nerdtree'
