@@ -52,8 +52,10 @@ let g:UltiSnipsJumpForwardTrigger="<C-x>"
 let g:UltiSnipsJumpBackwardTrigger="<C-z>"
 
 " ALE
-highlight clear ALEErrorSign
-highlight clear ALEWarningSign
+hi ALEErrorSign guifg=red
+hi ALEWarningSign guifg=yellow
+hi link ALEVirtualTextError ALEErrorSign
+hi link ALEVirtualTextWarning ALEWarningSign
 let g:ale_sign_error = '•'
 let g:ale_sign_warning = '•'
 let g:ale_sign_info = '➜'
