@@ -48,4 +48,4 @@ call plug#end()
 " Configuration source
 source ~/.config/nvim/config/general.vim
 source ~/.config/nvim/config/theme.vim
-source ~/.config/nvim/config/plugins.vim
+source ~/.config/nvim/config/tool.vim
