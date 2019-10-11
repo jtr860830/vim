@@ -18,7 +18,7 @@ call plug#begin('~/.config/nvim/plugged')
   Plug 'Xuyuanp/nerdtree-git-plugin'
   Plug 'tpope/vim-fugitive'
   Plug 'airblade/vim-gitgutter'
-  Plug 'majutsushi/tagbar'
+  Plug 'liuchengxu/vista.vim'
   Plug 'ryanoasis/vim-devicons'
   " Auto Completion
   Plug 'neoclide/coc.nvim', {'tag': '*', 'branch': 'release'}
@@ -32,7 +32,6 @@ call plug#begin('~/.config/nvim/plugged')
   Plug 'elixir-editors/vim-elixir'
   Plug 'sheerun/vim-polyglot'
   " Tools
-  Plug 'Shougo/denite.nvim', {'do' : ':UpdateRemotePlugins'}
   Plug 'junegunn/fzf.vim' | Plug '/usr/local/opt/fzf'
   Plug 'easymotion/vim-easymotion'
   Plug 'tpope/vim-surround'
