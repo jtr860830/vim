@@ -39,7 +39,6 @@ call plug#begin('~/.config/nvim/plugged')
   Plug 'alvan/vim-closetag'
   Plug 'jiangmiao/auto-pairs'
   Plug 'andymass/vim-matchup'
-  Plug 'gko/vim-coloresque'
 
 call plug#end()
 " End Plugin manager
