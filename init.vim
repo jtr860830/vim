@@ -21,8 +21,7 @@ call plug#begin('~/.config/nvim/plugged')
   Plug 'majutsushi/tagbar'
   Plug 'ryanoasis/vim-devicons'
   " Auto Completion
-  Plug 'ycm-core/YouCompleteMe', { 'do': 'python3 ./install.py --clangd-completer --go-completer --ts-completer --rust-completer' }
-  Plug 'SirVer/ultisnips'
+  Plug 'neoclide/coc.nvim', {'tag': '*', 'branch': 'release'}
   Plug 'honza/vim-snippets'
   " Syntax Checker
   Plug 'dense-analysis/ale'

@@ -38,14 +38,11 @@ let g:NERDTreeHighlightFoldersFullName = 1
 let g:calendar_google_calendar = 1
 let g:calendar_google_task = 1
 
-" YouCompleteMe
-let g:ycm_global_ycm_extra_conf='~/.config/nvim/.ycm_extra_conf.py'
-let g:ycm_show_diagnostics_ui = 0
-
-" UltiSnips
-let g:UltiSnipsExpandTrigger="<S-Tab>"
-let g:UltiSnipsJumpForwardTrigger="<C-x>"
-let g:UltiSnipsJumpBackwardTrigger="<C-z>"
+" Completion Tool
+inoremap <expr> <Tab> pumvisible() ? "\<C-n>" : "\<Tab>"
+inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
+inoremap <expr> <cr> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
+inoremap <silent><expr> <c-space> coc#refresh()
 
 " ALE
 hi ALEErrorSign guifg=#ff5370
