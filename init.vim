@@ -21,7 +21,7 @@ call plug#begin('~/.config/nvim/plugged')
   Plug 'liuchengxu/vista.vim'
   Plug 'ryanoasis/vim-devicons'
   " Auto Completion
-  Plug 'neoclide/coc.nvim', {'tag': '*', 'branch': 'release'}
+  Plug 'neoclide/coc.nvim', {'branch': 'release'}
   Plug 'honza/vim-snippets'
   " Syntax Checker
   Plug 'dense-analysis/ale'
