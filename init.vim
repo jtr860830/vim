@@ -36,7 +36,6 @@ call plug#begin('~/.config/nvim/plugged')
   Plug 'easymotion/vim-easymotion'
   Plug 'tpope/vim-surround'
   Plug 'alvan/vim-closetag'
-  Plug 'jiangmiao/auto-pairs'
   Plug 'andymass/vim-matchup'
 
 call plug#end()
