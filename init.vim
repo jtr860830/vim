@@ -21,7 +21,7 @@ call plug#begin('~/.config/nvim/plugged')
   Plug 'liuchengxu/vista.vim'
   Plug 'ryanoasis/vim-devicons'
   " Auto Completion
-  Plug 'neoclide/coc.nvim', {'branch': 'release'}
+  Plug 'neoclide/coc.nvim', { 'branch': 'release' }
   Plug 'honza/vim-snippets'
   " Syntax Checker
   Plug 'dense-analysis/ale'
@@ -32,7 +32,7 @@ call plug#begin('~/.config/nvim/plugged')
   Plug 'elixir-editors/vim-elixir'
   Plug 'sheerun/vim-polyglot'
   " Tools
-  Plug 'junegunn/fzf.vim' | Plug '/usr/local/opt/fzf'
+  Plug 'junegunn/fzf.vim' | Plug '/usr/bin/fzf'
   Plug 'easymotion/vim-easymotion'
   Plug 'tpope/vim-surround'
   Plug 'alvan/vim-closetag'
