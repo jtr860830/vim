@@ -8,35 +8,35 @@ endif
 
 call plug#begin('~/.config/nvim/plugged')
 
-  " UI
-  Plug 'kaicataldo/material.vim'
-  Plug 'hzchirs/vim-material'
-  Plug 'vim-airline/vim-airline'
-  Plug 'vim-airline/vim-airline-themes'
-  Plug 'scrooloose/nerdtree'
-  Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
-  Plug 'Xuyuanp/nerdtree-git-plugin'
-  Plug 'tpope/vim-fugitive'
-  Plug 'airblade/vim-gitgutter'
-  Plug 'liuchengxu/vista.vim'
-  Plug 'ryanoasis/vim-devicons'
-  " Auto Completion
-  Plug 'neoclide/coc.nvim', { 'branch': 'release' }
-  Plug 'honza/vim-snippets'
-  " Syntax Checker
-  Plug 'dense-analysis/ale'
-  " Language Pack
-  Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
-  Plug 'rust-lang/rust.vim'
-  Plug 'dart-lang/dart-vim-plugin'
-  Plug 'elixir-editors/vim-elixir'
-  Plug 'sheerun/vim-polyglot'
-  " Tools
-  Plug 'junegunn/fzf.vim' | Plug '/usr/bin/fzf'
-  Plug 'easymotion/vim-easymotion'
-  Plug 'tpope/vim-surround'
-  Plug 'alvan/vim-closetag'
-  Plug 'andymass/vim-matchup'
+	" UI
+	Plug 'kaicataldo/material.vim'
+	Plug 'hzchirs/vim-material'
+	Plug 'vim-airline/vim-airline'
+	Plug 'vim-airline/vim-airline-themes'
+	Plug 'scrooloose/nerdtree'
+	Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
+	Plug 'Xuyuanp/nerdtree-git-plugin'
+	Plug 'tpope/vim-fugitive'
+	Plug 'airblade/vim-gitgutter'
+	Plug 'liuchengxu/vista.vim'
+	Plug 'ryanoasis/vim-devicons'
+	" Auto Completion
+	Plug 'neoclide/coc.nvim', { 'branch': 'release' }
+	Plug 'honza/vim-snippets'
+	" Syntax Checker
+	Plug 'dense-analysis/ale'
+	" Language Pack
+	Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
+	Plug 'rust-lang/rust.vim'
+	Plug 'dart-lang/dart-vim-plugin'
+	Plug 'elixir-editors/vim-elixir'
+	Plug 'sheerun/vim-polyglot'
+	" Tools
+	Plug 'junegunn/fzf.vim' | Plug '/usr/bin/fzf'
+	Plug 'easymotion/vim-easymotion'
+	Plug 'tpope/vim-surround'
+	Plug 'alvan/vim-closetag'
+	Plug 'andymass/vim-matchup'
 
 call plug#end()
 " End Plugin manager
