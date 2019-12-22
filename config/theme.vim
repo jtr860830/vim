@@ -1,7 +1,5 @@
 " Colorscheme
 let g:material_terminal_italics = 1
-let g:material_theme_style = 'ocean'
-let g:material_style='oceanic'
 color material
 
 " vim-airline
