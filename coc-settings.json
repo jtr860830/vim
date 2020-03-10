@@ -6,13 +6,5 @@
 	"git.topRemovedSign.hlGroup": "GitGutterDelete",
 	"git.changeRemovedSign.hlGroup": "GitGutterChangeDelete",
 	"suggest.snippetIndicator": "→",
-	"coc.source.word.shortcut": "Word",
-	"languageserver": {
-		"clangd": {
-			"command": "clangd",
-			"args": ["--background-index"],
-			"rootPatterns": ["compile_flags.txt", "compile_commands.json", ".vim/", ".git/", ".hg/"],
-			"filetypes": ["c", "cpp", "objc", "objcpp"]
-		}
-	}
+	"coc.source.word.shortcut": "Word"
 }
