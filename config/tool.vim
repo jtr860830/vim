@@ -8,7 +8,7 @@ let NERDTreeMinimalUI = 1
 let NERDTreeDirArrows = 1
 let g:WebDevIconsUnicodeDecorateFolderNodes = 1
 let g:DevIconsEnableFoldersOpenClose = 1
-let g:NERDTreeIndicatorMapCustom = {
+let g:NERDTreeGitStatusIndicatorMapCustom = {
 	\ "Modified"  : "✹",
 	\ "Staged"    : "✚",
 	\ "Untracked" : "✭",
@@ -20,7 +20,7 @@ let g:NERDTreeIndicatorMapCustom = {
 	\ 'Ignored'   : '☒',
 	\ "Unknown"   : "?"
 	\ }
-let g:NERDTreeShowIgnoredStatus = 1
+let g:NERDTreeGitStatusShowIgnored = 1
 let g:NERDTreeFileExtensionHighlightFullName = 1
 let g:NERDTreeExactMatchHighlightFullName = 1
 let g:NERDTreePatternMatchHighlightFullName = 1
