@@ -1,3 +1,7 @@
+" Python provider
+let g:python_host_prog = '~/.pyenv/versions/2.7.18/bin/python'
+let g:python3_host_prog = '~/.pyenv/versions/3.9.0/bin/python'
+
 " NERDTree
 autocmd StdinReadPre * let s:std_in=1
 autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
@@ -43,3 +47,28 @@ let g:ale_sign_warning = '•'
 let g:ale_sign_info = '➜'
 let g:ale_virtualtext_cursor = 1
 let g:ale_virtualtext_prefix = '➤ '
+
+" COC extensions
+let g:coc_global_extensions = [
+	\ 'coc-actions',
+	\ 'coc-clangd',
+	\ 'coc-dictionary',
+	\ 'coc-emoji',
+	\ 'coc-go',
+	\ 'coc-git',
+	\ 'coc-highlight',
+	\ 'coc-json',
+	\ 'coc-lists',
+	\ 'coc-marketplace',
+	\ 'coc-pairs',
+	\ 'coc-rust-analyzer',
+	\ 'coc-sh',
+	\ 'coc-snippets',
+	\ 'coc-sql',
+	\ 'coc-syntax',
+	\ 'coc-tabnine',
+	\ 'coc-toml',
+	\ 'coc-tsserver',
+	\ 'coc-word',
+	\ 'coc-yaml'
+	\ ]
