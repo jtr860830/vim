@@ -1,5 +1,6 @@
 {
 	"diagnostic.displayByAle": true,
+	"explorer.icon.enableNerdfont": true,
 	"git.addedSign.hlGroup": "GitGutterAdd",
 	"git.changedSign.hlGroup": "GitGutterChange",
 	"git.removedSign.hlGroup": "GitGutterDelete",
