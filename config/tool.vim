@@ -1,9 +1,6 @@
-" Node.js provider
-let g:node_host_prog = '~/.nodenv/versions/15.1.0/bin/neovim-node-host'
-
 " Python provider
-let g:python_host_prog = '~/.pyenv/versions/2.7.18/bin/python'
-let g:python3_host_prog = '~/.pyenv/versions/3.9.0/bin/python'
+let g:python3_host_prog = '~/.pyenv/shims/python'
+let g:python_host_prog = '~/.pyenv/shims/python2'
 
 " Completion Tool
 inoremap <expr> <Tab> pumvisible() ? "\<C-n>" : "\<Tab>"
