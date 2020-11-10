@@ -16,6 +16,7 @@ set hi=1000
 set tgc
 set bs=2
 set bg=dark
+set stal=2
 set cot=longest,menu
 set fdm=indent
 syn on

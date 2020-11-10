@@ -10,8 +10,8 @@ call plug#begin('~/.config/nvim/plugged')
 
 	" UI
 	Plug 'joshdick/onedark.vim'
-	Plug 'vim-airline/vim-airline'
-	Plug 'vim-airline/vim-airline-themes'
+	Plug 'itchyny/lightline.vim'
+	Plug 'mengelbrecht/lightline-bufferline'
 	Plug 'tpope/vim-fugitive'
 	Plug 'airblade/vim-gitgutter'
 	Plug 'liuchengxu/vista.vim'
@@ -29,7 +29,7 @@ call plug#begin('~/.config/nvim/plugged')
 	Plug 'sheerun/vim-polyglot'
 	" Tools
 	Plug 'junegunn/fzf.vim' | Plug '/usr/bin/fzf'
-	Plug 'easymotion/vim-easymotion'
+	Plug 'justinmk/vim-sneak'
 	Plug 'tpope/vim-surround'
 	Plug 'alvan/vim-closetag'
 	Plug 'andymass/vim-matchup'
