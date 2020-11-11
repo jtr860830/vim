@@ -19,5 +19,6 @@ set bg=dark
 set stal=2
 set cot=longest,menu
 set fdm=indent
+set ut=100
 syn on
 lan en_US.UTF-8

@@ -14,6 +14,7 @@ call plug#begin('~/.config/nvim/plugged')
 	Plug 'mengelbrecht/lightline-bufferline'
 	Plug 'tpope/vim-fugitive'
 	Plug 'airblade/vim-gitgutter'
+	Plug 'mhinz/vim-signify'
 	Plug 'liuchengxu/vista.vim'
 	Plug 'ryanoasis/vim-devicons'
 	" Auto Completion
