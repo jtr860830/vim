@@ -6,7 +6,7 @@ color onedark
 " lightline
 let g:lightline = {}
 let g:lightline.colorscheme = 'one'
-let g:lightline.active = {'left':[['mode','paste'],['gitbranch','readonly','filename','modified'],['gitdiff','cocstatus']],'right':[['linter_checking','linter_errors','linter_warnings','linter_infos','linter_ok'],['percent','lineinfo'],['fileformat','fileencoding','filetype']]}
+let g:lightline.active = {'left':[['mode','paste'],['gitbranch','gitdiff','readonly','filename','modified'],['cocstatus']],'right':[['linter_checking','linter_errors','linter_warnings','linter_infos','linter_ok'],['percent','lineinfo'],['fileformat','fileencoding','filetype']]}
 let g:lightline.inactive = {'left':[['filename','gitversion']],'right':[['lineinfo'],['percent']]}
 let g:lightline.tabline = {'left':[['buffers']],'right':[['close']]}
 let g:lightline.component_function = {'gitbranch':'gitbranch#name','cocstatus':'coc#status'}
