@@ -16,4 +16,4 @@ use (neo)vim to open any file, and `:PlugInstall`.
 
 And you should install one of [nerd-fonts](https://github.com/ryanoasis/nerd-fonts).
 
-**My environment is macOS + iTerm2 + NeoVim. It is recommend to use NeoVim for best experience**
+**My environment is Fedora + NeoVim. It is recommend to use NeoVim for best experience**
