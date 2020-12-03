@@ -37,6 +37,7 @@ call plug#begin('~/.config/nvim/plugged')
 	Plug 'tpope/vim-surround'
 	Plug 'alvan/vim-closetag'
 	Plug 'andymass/vim-matchup'
+	Plug 'editorconfig/editorconfig-vim'
 
 call plug#end()
 " End Plugin manager
