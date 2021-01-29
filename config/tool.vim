@@ -1,6 +1,6 @@
 " Python provider
-let g:python3_host_prog = '~/.local/pyenv/shims/python'
-let g:python_host_prog = '~/.local/pyenv/shims/python2'
+let g:python3_host_prog = '~/.local/share/pyenv/shims/python'
+let g:python_host_prog = '~/.local/share/pyenv/shims/python2'
 
 " Completion Tool
 inoremap <expr> <Tab> pumvisible() ? "\<C-n>" : "\<Tab>"
