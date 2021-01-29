@@ -22,5 +22,5 @@ set fdm=indent
 set ut=100
 syn on
 set mouse=a
-set shell=bash
+set sh=bash
 lan en_US.UTF-8
