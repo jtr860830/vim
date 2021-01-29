@@ -10,11 +10,8 @@ call plug#begin('~/.config/nvim/plugged')
 
 	" UI
 	Plug 'joshdick/onedark.vim'
-	Plug 'itchyny/lightline.vim'
-	Plug 'itchyny/vim-gitbranch'
-	Plug 'niklaas/lightline-gitdiff'
-	Plug 'maximbaz/lightline-ale'
-	Plug 'mengelbrecht/lightline-bufferline'
+	Plug 'vim-airline/vim-airline'
+	Plug 'vim-airline/vim-airline-themes'
 	Plug 'tpope/vim-fugitive'
 	Plug 'airblade/vim-gitgutter'
 	Plug 'mhinz/vim-signify'
