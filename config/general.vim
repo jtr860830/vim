@@ -21,4 +21,5 @@ set cot=longest,menu
 set fdm=indent
 set ut=100
 syn on
+set mouse=a
 lan en_US.UTF-8
