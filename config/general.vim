@@ -21,6 +21,5 @@ set cot=longest,menu
 set fdm=indent
 set ut=100
 syn on
-set mouse=a
 set sh=bash
 lan en_US.UTF-8
