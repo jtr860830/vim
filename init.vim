@@ -25,8 +25,6 @@ call plug#begin('~/.config/nvim/plugged')
 	" Language Pack
 	Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 	Plug 'rust-lang/rust.vim'
-	Plug 'dart-lang/dart-vim-plugin'
-	Plug 'elixir-editors/vim-elixir'
 	Plug 'sheerun/vim-polyglot'
 	" Tools
 	Plug 'junegunn/fzf.vim' | Plug '/usr/bin/fzf'
