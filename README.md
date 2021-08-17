@@ -1,4 +1,4 @@
-Jezrien's vimrc
+My neovim configuration
 ===
 
 How to use?
@@ -6,14 +6,8 @@ How to use?
 
 Backup your original (neo)vim settings.
 
-In home directory, 
-
-```
-git clone https://github.com/jtr860830/.vim.git .config/nvim
-```
-
-use (neo)vim to open any file, and `:PlugInstall`.
+1. `git clone https://github.com/jtr860830/.vim.git ~/.config/nvim`
+2. open neovim
+3. `:PackerSync`
 
 And you should install one of [nerd-fonts](https://github.com/ryanoasis/nerd-fonts).
-
-**My environment is Fedora + NeoVim. It is recommend to use NeoVim for best experience**
