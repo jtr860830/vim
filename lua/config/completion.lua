@@ -1,5 +1,5 @@
 -- compe
-require('compe').setup {
+require("compe").setup {
 	source = {
 		path = true;
 		buffer = true;
@@ -14,7 +14,7 @@ require('compe').setup {
 
 -- autopairs
 local autopairs = require("nvim-autopairs");
-local Rule = require('nvim-autopairs.rule');
+local Rule = require("nvim-autopairs.rule");
 require("nvim-autopairs.completion.compe").setup({
 	map_cr = true,
 	map_complete = true,
@@ -23,18 +23,18 @@ require("nvim-autopairs.completion.compe").setup({
 autopairs.setup {
 	check_ts = true,
 	ts_config = {
-		lua = { 'string' },
-		javascript = { 'template_string' },
+		lua = { "string" },
+		javascript = { "template_string" },
 		java = false,
 	}
 };
 -- press % => %% is only inside comment or string
-local ts_conds = require('nvim-autopairs.ts-conds');
+local ts_conds = require("nvim-autopairs.ts-conds");
 autopairs.add_rules({
 	Rule("%", "%", "lua")
-		:with_pair(ts_conds.is_ts_node({'string','comment'})),
+		:with_pair(ts_conds.is_ts_node({"string","comment"})),
 	Rule("$", "$", "lua")
-		:with_pair(ts_conds.is_not_ts_node({'function'}))
+		:with_pair(ts_conds.is_not_ts_node({"function"}))
 });
 
 -- Keymaps
@@ -43,8 +43,8 @@ local t = function(str)
 end
 
 local check_back_space = function()
-		local col = vim.fn.col('.') - 1;
-		return col == 0 or vim.fn.getline('.'):sub(col, col):match('%s') ~= nil;
+		local col = vim.fn.col(".") - 1;
+		return col == 0 or vim.fn.getline("."):sub(col, col):match("%s") ~= nil;
 end
 -- Use (s-)tab to:
 --- move to prev/next item in completion menuone
@@ -52,18 +52,18 @@ end
 _G.tab_complete = function()
 	if vim.fn.pumvisible() == 1 then
 		return t "<C-n>";
-	elseif vim.fn['vsnip#available'](1) == 1 then
+	elseif vim.fn["vsnip#available"](1) == 1 then
 		return t "<Plug>(vsnip-expand-or-jump)";
 	elseif check_back_space() then
 		return t "<Tab>";
 	else
-		return vim.fn['compe#complete']();
+		return vim.fn["compe#complete"]();
 	end
 end
 _G.s_tab_complete = function()
 	if vim.fn.pumvisible() == 1 then
 		return t "<C-p>";
-	elseif vim.fn['vsnip#jumpable'](-1) == 1 then
+	elseif vim.fn["vsnip#jumpable"](-1) == 1 then
 		return t "<Plug>(vsnip-jump-prev)";
 	else
 		return t "<S-Tab>";

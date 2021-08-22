@@ -3,21 +3,34 @@ local capabilities = vim.lsp.protocol.make_client_capabilities();
 capabilities.textDocument.completion.completionItem.snippetSupport = true;
 
 -- Language servers
-local servers = {
-	'clangd',
-	'gopls',
-	'rust_analyzer',
-	'tsserver'
+--- Rust
+require("lspconfig").rust_analyzer.setup {
+	cmd = { 
+		"rustup",
+		"run",
+		"nightly",
+		"rust-analyzer",
+	},
+	capabilities = capabilities
 };
 
-for _, lsp in ipairs(servers) do
-	require('lspconfig')[lsp].setup {
-		capabilities = capabilities,
-	};
-end
+--- Golang
+require("lspconfig").gopls.setup {
+	capabilities = capabilities
+};
+
+--- JavaScript / TypeScript
+require("lspconfig").tsserver.setup {
+	capabilities = capabilities
+};
+
+--- C / C++
+require("lspconfig").clangd.setup {
+	capabilities =  capabilities
+};
 
 -- lspsaga
-require('lspsaga').init_lsp_saga();
+require("lspsaga").init_lsp_saga();
 
 -- Completion icons
-require('lspkind').init({ with_text = false });
+require("lspkind").init({ with_text = false });
