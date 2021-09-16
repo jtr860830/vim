@@ -1,21 +1,17 @@
 -- Colorscheme
-vim.g.onedark_transparent_background = true;
-require("onedark").setup();
+require("onedarker");
 
--- Treesitter
-require"nvim-treesitter.configs".setup {
-	ensure_installed = "all",
-	highlight = { enable = true },
-	autopairs = { enable = true }
-};
-
--- Statusline
-require("bufferline").setup {
+-- Bufferline
+require("bufferline").setup({
 	options = {
 		diagnostics = "nvim_lsp",
 		separator_style = "padded_slant"
 	}
-};
+});
+
+-- Statusline
+local section = require("galaxyline").section;
+local condition = require("galaxyline.condition");
 
 -- Git
-require("gitsigns").setup()
+require("gitsigns").setup();

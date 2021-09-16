@@ -1,10 +1,10 @@
--- LSP snippets config
+-- LSP
+local lsp = require("lspconfig");
+--- options
 local capabilities = vim.lsp.protocol.make_client_capabilities();
-capabilities.textDocument.completion.completionItem.snippetSupport = true;
-
--- Language servers
+capabilities = require("cmp_nvim_lsp").update_capabilities(capabilities);
 --- Rust
-require("lspconfig").rust_analyzer.setup {
+lsp.rust_analyzer.setup({
 	cmd = { 
 		"rustup",
 		"run",
@@ -12,25 +12,25 @@ require("lspconfig").rust_analyzer.setup {
 		"rust-analyzer",
 	},
 	capabilities = capabilities
-};
-
+});
 --- Golang
-require("lspconfig").gopls.setup {
+lsp.gopls.setup({
 	capabilities = capabilities
-};
-
+});
 --- JavaScript / TypeScript
-require("lspconfig").tsserver.setup {
+lsp.tsserver.setup({
 	capabilities = capabilities
-};
-
+});
 --- C / C++
-require("lspconfig").clangd.setup {
+lsp.clangd.setup({
 	capabilities =  capabilities
-};
+});
 
 -- lspsaga
 require("lspsaga").init_lsp_saga();
 
--- Completion icons
-require("lspkind").init({ with_text = false });
+-- lsp_signature
+require("lsp_signature").setup();
+
+-- navigator
+require("navigator").setup();
