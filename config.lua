@@ -27,7 +27,7 @@ lvim.builtin.treesitter.ignore_install = { "haskell" }
 lvim.builtin.treesitter.highlight.enabled = true
 
 -- linters
-local linters = require "lvim.lsp.null-ls.linters"
+local linters = require("lvim.lsp.null-ls.linters")
 linters.setup({
   {
     exe = "eslint",
@@ -36,7 +36,7 @@ linters.setup({
 })
 
 -- formatters
-local formatters = require "lvim.lsp.null-ls.formatters"
+local formatters = require("lvim.lsp.null-ls.formatters")
 formatters.setup({
   {
     exe = "eslint",
@@ -51,7 +51,7 @@ lvim.plugins = {
     "ray-x/lsp_signature.nvim",
     event = "BufRead",
     config = function()
-      require "lsp_signature".setup()
+      require("lsp_signature").on_attach()
     end
   },
   {
