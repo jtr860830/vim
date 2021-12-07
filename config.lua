@@ -20,6 +20,7 @@ lvim.builtin.treesitter.ensure_installed = {
   "typescript",
   "css",
   "rust",
+  "go",
   "java",
   "yaml",
 }
